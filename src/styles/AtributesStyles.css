@@ -1,0 +1,48 @@
+.atributes-page{
+    width: 100vw;
+    height: 100vh;
+    background: #121212;
+}
+
+.box-chamber{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: absolute;
+}
+
+.pai{
+    position: relative;
+}
+
+.inputs{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.inputs input{
+    all: unset;
+    width: 56px;
+    height: 56px;
+    background: red;
+    display: inline-block;
+}
+
+.line1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.line2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.line3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
