@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { BsCursor } from "react-icons/bs";
 import { CiEdit } from "react-icons/ci";
 import { FaCheck } from "react-icons/fa6";
 
 export default function AtributesInChamber() {
     const [editavel, setEditavel] = useState(false);
-    const [valor, setValor] = useState("");
+    const [valorFIS, setValorFIS] = useState("");
+    const [valorINT, setValorINT] = useState("");
+    const [valorAGI, setValorAGI] = useState("");
+    const [valorCOR, setValorCOR] = useState("");
 
     return (
         <>
@@ -13,10 +15,10 @@ export default function AtributesInChamber() {
             <div className="line1">
                 <div className="atributes-place">
                     <input type="number" name="fisico" disabled={!editavel} id="fis" max="10"
-                    value={valor}
-                    onChange={(e) => setValor(e.target.value)}
+                    value={valorFIS}
+                    onChange={(e) => setValorFIS(e.target.value)}
                     onBlur={() => {
-                      if (valor === "") setValor("0");
+                      if (valorFIS === "") setValorFIS("0");
                     }}
                     className={`atributes-place-input ${!editavel ? "no-border" : ""}`}
                     />
@@ -26,10 +28,10 @@ export default function AtributesInChamber() {
             <div className="line2">
                 <div className="atributes-place" id="atributes-place-int">
                     <input type="number" name="intelecto" disabled={!editavel} id="int" max="10"
-                    value={valor}
-                    onChange={(e) => setValor(e.target.value)}
+                    value={valorINT}
+                    onChange={(e) => setValorINT(e.target.value)}
                     onBlur={() => {
-                      if (valor === "") setValor("0");
+                      if (valorINT === "") setValorINT("0");
                     }}
                     className={`atributes-place-input ${!editavel ? "no-border" : ""}`}
                     />
@@ -37,10 +39,10 @@ export default function AtributesInChamber() {
                 </div>
                 <div className="atributes-place" id="atributes-place-agl">
                     <input type="number" name="agilidade" disabled={!editavel} id="agi" max="10" 
-                    value={valor}
-                    onChange={(e) => setValor(e.target.value)}
+                    value={valorAGI}
+                    onChange={(e) => setValorAGI(e.target.value)}
                     onBlur={() => {
-                      if (valor === "") setValor("0");
+                      if (valorAGI === "") setValorAGI("0");
                     }}
                     className={`atributes-place-input ${!editavel ? "no-border" : ""}`}
                     />
@@ -50,10 +52,10 @@ export default function AtributesInChamber() {
             <div className="line3">
                 <div className="atributes-place">
                     <input type="number" name="coragem" disabled={!editavel} id="crg" max="10"
-                    value={valor}
-                    onChange={(e) => setValor(e.target.value)}
+                    value={valorCOR}
+                    onChange={(e) => setValorCOR(e.target.value)}
                     onBlur={() => {
-                      if (valor === "") setValor("0");
+                      if (valorCOR === "") setValorCOR("0");
                     }}
                     className={`atributes-place-input ${!editavel ? "no-border" : ""}`}
                     />
