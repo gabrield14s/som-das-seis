@@ -17,7 +17,7 @@
 
 .chamber{
     border: solid #A61D1C;
-    background: #171515;
+    background: #100f0f;
     width: 312px;
     height: 312px;
     border-radius: 45%;
@@ -38,6 +38,10 @@
     position: absolute;
 }
 
+.atributes-place input.no-border {
+    border-bottom: none;
+}
+
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
     appearance: none; /* Remove setas no padrão moderno */
     -moz-appearance: textfield; /* Remove setas no Firefox */
@@ -47,10 +51,38 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 .atributes-place{
     display: flex;
     border-radius: 50%;
-    background: black;
+    border: solid #A61D1C 2px;
     width: 6em;
     height: 6em;
     position: relative;
+}
+
+.atributes-place p{
+    margin: 0;
+    font-size: 32px;
+    color: #FFF;
+    font-family: 'Smokum-Regular', sans-serif;
+
+    position: absolute;
+
+    bottom: 2px;
+    right: calc(50% - 17px);
+}
+
+.line1 .atributes-place{
+    top: 10px;
+}
+
+.line2 #atributes-place-int {
+    left: 10px;
+}
+
+.line2 #atributes-place-agl{
+    right: 10px;
+}
+
+.line3 .atributes-place{
+    bottom: 10px;
 }
 
 .inputs{
@@ -62,6 +94,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     display: flex;
     justify-content: space-between;
     height: 33.33%;
+    position: relative;
 }
 
 .line1, .line3{
@@ -71,8 +104,12 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     justify-content: center;
 
     position: relative;
-}
+}       
 
+.area-edit-button{
+    display: flex;
+    justify-content: end;
+}
 
 @media (max-width: 350px){
     .chamber{

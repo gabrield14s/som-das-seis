@@ -4,8 +4,8 @@ import Chamber from "../Components/Chamber";
 
 export default function Atributes(){
     return(
-        <body className="atributes-page">
+        <div className="atributes-page">
             <Chamber></Chamber>
-        </body>
+        </div>
     );
 }
