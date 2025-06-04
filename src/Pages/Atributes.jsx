@@ -9,5 +9,6 @@ export default function Atributes(){
             <Title title="Atributos"></Title>
             <Chamber></Chamber>
         </div>
+        
     );
 }
