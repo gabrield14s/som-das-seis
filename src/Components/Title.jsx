@@ -1,4 +1,3 @@
-import react from "react";
 import "../styles/AtributesStyles.css"
 
 export default function Title( { title } ){

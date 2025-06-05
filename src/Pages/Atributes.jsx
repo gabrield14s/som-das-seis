@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/AtributesStyles.css"
 import Chamber from "../Components/Chamber";
 import Title from "../Components/Title";
@@ -9,6 +8,5 @@ export default function Atributes(){
             <Title title="Atributos"></Title>
             <Chamber></Chamber>
         </div>
-        
     );
 }
