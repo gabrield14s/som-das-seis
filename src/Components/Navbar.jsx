@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="nav-container" style={{ padding: "1.2rem" }}>
+      <nav className="nav-container" style={{ padding: "10px" }}>
         <button className="hamburger" onClick={toggleMenu}>
           ☰
         </button>

@@ -37,6 +37,7 @@
 
 .nav-link.active {
   color: #A61D1C;
+  padding-bottom: 5px ;
   border-bottom: 2px solid #A61D1C;
 }
 
