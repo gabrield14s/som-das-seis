@@ -16,7 +16,7 @@ body, html {
   color: white;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
-  
+  text-align: center;
 }
 
 .button-login {
