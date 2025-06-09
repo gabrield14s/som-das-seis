@@ -18,7 +18,7 @@ export default function Navbar() {
           <img src={sacramentoIcon} alt="sacramento icon" style={{height: "3rem"}}/>
         </div>
         <div>
-          <ul style={{ listStyle: "none", display: "flex", gap: "50px", margin: 0, padding: 0 }}>
+          <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
             <li>
               <NavLink
                 to="/"

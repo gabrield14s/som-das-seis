@@ -1,3 +1,9 @@
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -54,10 +60,10 @@
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 1rem;
+    left: 0;
     background-color: #111;
     padding: 1rem;
-    border-radius: 6px;
+    
   }
 
   .nav-links.open {
