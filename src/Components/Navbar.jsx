@@ -10,15 +10,18 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="nav-container" style={{ padding: "10px" }}>
-        <button className="hamburger" onClick={toggleMenu}>
-          ☰
-        </button>
-        <div>
-          <img src={sacramentoIcon} alt="sacramento icon" style={{height: "3rem"}}/>
+      <button className="hamburger" onClick={toggleMenu}>
+        ☰
+      </button>
+      <nav className="nav-container">
+        <div className="div-logo">
+          <img src={sacramentoIcon} alt="sacramento icon" style={{ height: "3.2rem" }} />
         </div>
         <div>
           <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+            <li>
+                <img src={sacramentoIcon} alt="sacramento icon" style={{ height: "3.2rem" }} />
+            </li>
             <li>
               <NavLink
                 to="/"
@@ -35,10 +38,12 @@ export default function Navbar() {
                 Ficha
               </NavLink>
             </li>
+            <li>
+              <div>
+                <button className="button-login">Login</button>
+              </div>
+            </li>
           </ul>
-        </div>
-        <div>
-          <button className="button-login">Login</button>
         </div>
       </nav >
 
